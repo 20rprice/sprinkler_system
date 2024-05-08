@@ -38,8 +38,7 @@ try:
         temp_obj = file.readlines()
         info = json.loads(temp_obj[0])
 except:
-    info = {"total_run_time": 0, "total_time_remaining": 0, "curr_section": 0, "section_run_time": 0,
-            "section_time_remaining": 0}
+    info = {"first_section": 5, "second_section": 2, "third_section": 1, "fourth_section": 6, "fifth_section": 3, "sixth_section": 4, "section_1_time": 0.5, "section_2_time": 0.05, "section_3_time": 0.1, "section_4_time": 0.1, "section_5_time": 0.2, "section_6_time": 0.1}
 
 section_order = [info["first_section"], info["second_section"], info["third_section"], info["fourth_section"],
                  info["fifth_section"], info["sixth_section"]]
